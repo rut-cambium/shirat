@@ -1,0 +1,150 @@
+body {
+width:100%;
+height:100%;
+overflow:hidden;
+  margin: 0;
+    background-color: rgb(234, 229, 195);
+	    direction: rtl;
+  font-family: arial;
+}
+.main-container{
+   width: 1024px;
+  margin: auto;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: auto;
+}
+.header{
+	height:564px;
+	width:100%;
+	overflow:hidden;
+	background-image:url('../img/header.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+
+.menu{
+  height: 150px;
+  position: relative;
+  top: -107px;
+  padding: 0px 19px;
+  
+}
+
+.main-wrap{
+   background-color: rgb(234, 229, 195);
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 22%;
+  height: 500px;
+  width: 120%;
+  top: 507px;
+  -webkit-box-shadow: 0px -2px 5px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow: 0px -2px 5px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 0px -2px 5px 0px rgba(50, 50, 50, 0.15);
+  margin: auto;
+  position: absolute;
+  right: -50%;
+  left: -50%;
+}
+.main{
+width:1024px;
+margin:auto;
+display:block;
+position:relative;
+}
+
+.tab{
+background-repeat:no-repeat;
+width:100px;
+height:100px;
+	background-size:100%;
+	width:164px;
+	height:94px;
+	  display: inline-block;
+	    position: relative;
+		  cursor: pointer;
+		    opacity: 0.85;
+			margin-right:-6px;
+
+
+}
+.tab.current{
+opacity:1}
+.tab1{
+background-image:url('../img/tab1.png');
+  width: 164px;
+  height: 100px;
+  top: 25px;
+}
+
+.tab2{
+background-image:url('../img/tab2.png');
+  width: 164px;
+  height: 97px;
+    top: 7px;
+}
+
+.tab3{
+background-image:url('../img/tab3.png');
+  top: -3px;
+}
+
+.tab4{
+background-image:url('../img/tab4.png');
+  top: -3px;
+}
+
+.tab5{
+background-image:url('../img/tab5.png');
+  width: 163px;
+  height: 95px;
+    top: 6px;
+}
+
+.tab6{
+background-image:url('../img/tab6.png');
+  width: 163px;
+  height: 99px;
+    top: 23px;
+}
+
+
+
+/*****side menu*******/
+.side-menu{
+  
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  top: 67px;
+  width: 186px;
+    overflow: hidden;
+}
+.side-menu ul{
+    list-style-type: none;
+  padding-right: 0;
+  margin: 0;
+    color: #2A9984;
+}
+.side-menu li{
+  width: 100%;
+  padding: 10px 0px;
+  padding-right: 10px;
+  background-color:rgba(225,225,225,0.5);
+  border-bottom: 2px solid #E1DFD2;
+}
+.side-menu li.active{
+background-color:rgba(225,225,225,1)
+}
+
+.come{
+}
+.come .title{
+}
+.come .icon{
+}
+.come .text-area{
+}
+
+
