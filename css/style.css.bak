@@ -113,13 +113,13 @@ background-image:url('../img/tab6.png');
 /*****side menu*******/
 .side-menu{
   
-    /* position: absolute; */
-  /* right: 0; */
+  position: absolute;
+  right: 0;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  /* top: 67px; */
-  /* width: 186px; */
-  overflow: hidden;
+  top: 67px;
+  width: 186px;
+    overflow: hidden;
 }
 .side-menu ul{
     list-style-type: none;
@@ -133,7 +133,6 @@ background-image:url('../img/tab6.png');
   padding-right: 10px;
   background-color:rgba(225,225,225,0.5);
   border-bottom: 2px solid #E1DFD2;
-  cursor:pointer;
 }
 .side-menu li.active{
 background-color:rgba(225,225,225,1)
@@ -141,110 +140,14 @@ background-color:rgba(225,225,225,1)
 .side-menu li:hover{
 background-color:rgba(225,225,225,1)
 }
-.right{
-  position: absolute;
-  right: 0;
-  /* border-top-left-radius: 20px; */
-  /* border-bottom-left-radius: 20px; */
-  top: 83px;
-  width: 186px;
-  /* overflow: hidden; */}
-  .social-icons{
-    margin-top: 26px;
-  direction: rtl;
-  width: 135px;
-  float: left;
-  }
-  .facebook{
-    background-image: url('../img/facebook.png');
-  background-size: 100%;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  margin-right: 10px
-  }
-  .youtube{
-    background-image: url('../img/youtube.png');
-  background-size: 100%;
-  display: inline-block;
-  width: 73px;
-  height: 35px;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  }
-.middle{
-  width: 48%;
-  /* margin: auto; */
-  /* margin-top: 71px; */
-  position: absolute;
-  top: 81px;
-  left: 0;
-  right: 0;
-  margin: auto;
+
+.come{
 }
-.box{
-  background-color: #F3EED8;
-  position: relative;
-  border-radius: 15px;
-  height: 81px;
+.come .title{
 }
- .title{
-background-image: url('../img/topTitle.png');
-  background-size: 100%;
-  display: block;
-  width: 173px;
-  height: 69px;
-  position: absolute;
-  right: 20px;
-  top:-15px;
+.come .icon{
 }
-.title span{
-  margin: auto;
-  width: 100px;
-  display: block;
-  margin-top: 14px;
-  text-align: center;
-  color: #96264C;
-  font-weight: bold;
-  }
-.box .icon{
-   background-image: url('../img/video-icon.png');
-  background-size: 100%;
-  display: block;
-  width: 72px;
-  height: 82px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -46px;
-  left: -21px;
-}
-.box .text-area{
-    width: 228px;
-  float: left;
-  font-size: 14px;
-  margin-left: 65px;
-  margin-top: 11px;
-  line-height: 20px;
+.come .text-area{
 }
 
-.join.box{  margin-top: 32px;
-height:120px}
-.box.join .icon{
-   background-image: url('../img/mail-icon.png');
-     top: -23px;}
-	 .join-details{
-	   clear: both;
-  /* margin-top: 15px; */
-  position: relative;
-  top: 12px;
-  margin-right: 25px;}
-   .join-details input{
-    width: 150px;
-  margin-left: 10px;}
-  
-  .det-name{
-  margin-left: 10px;
-  }
-  
+
