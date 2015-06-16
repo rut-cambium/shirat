@@ -64,7 +64,7 @@
 					<span>מעוניינת לקבל עדכונים על ימי עיון? מלאי את פרטייך והצטרפי לרשימת התפוצה שלנו</span>
 					
 					</div>
-					<div class="join-details"><span class="det-name">שם:</span><span><input type="text" /></span><span class="det-name">שם:</span><span><input type="text" /></span></div>
+					<div class="join-details"><span class="det-name">שם:</span><span><input type="text" /></span><span class="det-name">דוא"ל:</span><span><input type="text" /></span><div class="send-btn"></div></div>
 				</div>
 				</div>
 				
@@ -104,7 +104,7 @@
 	<div class="credit">
 		<div class="dredit-item"><a href="">פיתוח: רות הנדלר</a></div>
 		<span>|</span>
-		<div class="dredit-item"><a href="">עיצוב: סטודיו טליה רינג</a></div>
+		<div class="dredit-item"><a href="https://talyaring.carbonmade.com/">עיצוב: סטודיו טליה רינג</a></div>
 	</div>
 </div>
 
