@@ -29,16 +29,21 @@ overflow:hidden;
 }
 
 .menu{
-  height: 150px;
+    height: 150px;
   position: absolute;
-  top: 465px;
-  padding: 0px 19px;
+  top: 458px;
+  /* padding: 0px 19px; */
+  /* margin: auto; */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 972px;
   
 }
 
 .main-wrap{
-    border-top-left-radius: 50% 20%;
-  border-top-right-radius: 50% 22%;
+    border-top-left-radius: 478px 117px;
+  border-top-right-radius: 478px 117px;
   height: 490px;
   width: 120%;
   top: -52px;
@@ -391,11 +396,11 @@ height:120px}
 	  /*************inner pages*************/
 	  .inner-page .header{
 	    height: 337px;
+background-image: url('../img/inner-header.jpg')
 
-  background-position-y: -151px;
 	  }
 	.inner-page  .menu{
-	    top: 237px;
+	    top: 238px;
 	  }
 .inner-page .main-wrap
 	  {
@@ -413,6 +418,31 @@ height:120px}
 		  top: initial;
   bottom: 0;
 		}
-
-		.subject-img{
+.subject-img{
+		  
+  width: 383px;
+  height: 95px;
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: 11px;
+  margin-left: 15px;
 		}
+		.information .subject-img{
+		  background-image: url('../img/about.png');
+ 
+		}
+		.about-midrasha .subject-img{
+		   background-image: url('../img/abotMid.png');
+  width: 614px;
+  height: 121px;
+		}
+		.text{
+		  padding: 0 30px;
+  margin-top: 63px;
+  height: 290px;
+  overflow-y: auto;
+  }
+ 
+ .inner-page .middle .title span {
+ 
+  margin-top: 8px;}
