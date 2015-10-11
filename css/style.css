@@ -9,6 +9,12 @@ overflow:hidden;
     overflow-y: auto;
 	  color: #696969;
 }
+
+a{
+text-decoration:none;
+    color: inherit;
+}
+
 .main-container{
     width: 1024px;
   margin: auto;
@@ -206,6 +212,10 @@ background-color:#fff
   right: 42px;
    border-radius: 16px;
 }
+.inner-page .with-sidebar{
+    width: 477px;
+  
+    right: 209px;}
 .left{
   position: absolute;
   left: 23px;
@@ -435,6 +445,15 @@ background-image: url('../img/inner-header.jpg')
 		   background-image: url('../img/abotMid.png');
   width: 614px;
   height: 121px;
+		}
+		.subject-img-top{
+		    position: absolute;
+    left: 23px;
+    top: -23px;
+    background-image: url('../img/way.jpg');
+    width: 224px;
+    height: 61px;
+    background-size: 100%;
 		}
 		.text{
 		  padding: 0 30px;
