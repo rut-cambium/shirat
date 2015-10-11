@@ -1,113 +1,58 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html data-ng-app="shiratSite">
     <head>
-<link rel="stylesheet" type="text/css" href="css/style.css">      
-	  <meta charset="utf-8" />
-        <title></title>
+        <meta charset="utf-8" />
+        <title>מדרשת שירת חברון</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
+
     <body>
-        <div class="main-container">
-			<div class="header">
-			</div>
-			<div class="menu">
-				<div class="tab tab1 current">
-				</div>
-				<div class="tab tab2">
-				</div>
-				<a href="information.html"><div class="tab tab3">
-				</div></a>
-				<div class="tab tab4">
-				</div>
-				<div class="tab tab5">
-				</div>
-				<div class="tab tab6">
-				</div>
-			
-			</div>
-			<div class="main-wrap">
-			<div class="main">
-			
-			<div class="right">
-			
+        <div class="main-container" ng-class="{'inner-page': state.includes('about') || state.includes('aboutMidrasha') || state.includes('info')}">
+            <header></header>
+            <menu></menu>
+
+            <div class=" main-wrap">
+                <div class="main">
+                    <right ng-hide="state.includes('about') || state.includes('aboutMidrasha') || state.includes('info')"></right>
+                    <div id="main-view" data-ui-view="main" class="main-view">
+                    
+                    </div>
+
+                    <left></left>
+                    <div class="addon">
+                    </div>
+                </div>
+
+            </div>
+
+            <footer></footer>
 
 
-				<div class="side-menu">
-				
-				
-					<ul>
-						<li class="active">שנת המדרשה</li>
-						<li>גלריה</li>
-						<a href="way.html"><li>פרטים ודרכי הגעה</li></a>
-						<li>קצרצרים</li>
-					</ul>
-				</div>
-				<div class="social-icons">
-				<span class="youtube"></span>
-				<span class="facebook"></span>
-				</div>
-				</div>
-				<div class="middle">
-				<div class="come box">
-					<div class="title"><span>בואי להכיר!</span></div>
-					<div class="icon"></div>
-					<div class="text-area">ברוכה הבאה! הכירי את המדרשה
-					<br>
-					מעוניינת בטעימה מחיי המדרשה?
-					<br>
-					לחצי כאן לצפיה בסרטון אודותינו</div>
-				</div>
-				<div class="join box">
-					<div class="title"><span>הצטרפי לתפוצה</span></div>
-					<div class="icon"></div>
-					<div class="text-area">
-					<span>מעוניינת לקבל עדכונים על ימי עיון? מלאי את פרטייך והצטרפי לרשימת התפוצה שלנו</span>
-					
-					</div>
-					<div class="join-details"><span class="det-name">שם:</span><span><input type="text" /></span><span class="det-name">דוא"ל:</span><span><input type="text" /></span><div class="send-btn"></div></div>
-				</div>
-				</div>
-				
-				<div class="left">
-					<div class="news box">
-					<div class="title"><span>חדש במדרשה</span></div>
-					<div class="news-list">
-						<span class="news-item">מזל טוב לרננה כהן לרגל אירוסיה עם דוד</span>
-						<span class="news-item">יום עיון בנושא טו בשבט בשנת השמיטה, מהרו להירשם!</span>
-					</div>
-					</div>
-					
-					<div class="box light">
-						<div class="candle"></div>
-						<div class="ima">לעילוי נשמת <b>אורה</b> בת מארי סאלם ע"ה</div>
-					</div>					
-				</div>
-				
-			<div class="addon">
-			</div>				
-			</div>
-			</div>
-			
-<div class="footer">
-	<div class="footer-border"></div>
-	<div class="footer-line">
-		<span>מדרשת  שירת חברון</span>
-		<span>|</span>
-		<span>קרית ארבע 90100 בניין 25 ת.ד. 639 </span>
-		<span>|</span>
-		<span>טלפון: 052-8990272 / 052-8990322  </span>
-		<span>|</span>
-		<span>פקס: 15329960555 </span>
-		<span>|</span>
-		<span><a>www.shaveihevron.org</a></span>
-	</div>
-	<div class="credit">
-		<div class="dredit-item"><a href="">פיתוח: רות הנדלר</a></div>
-		<span>|</span>
-		<div class="dredit-item"><a target="_blank" href="https://talyaring.carbonmade.com/">עיצוב: סטודיו טליה רינג</a></div>
-	</div>
-</div>
+        </div>
 
-		</div>
+
+
+        <script src="js/jquery-1.8.3.min.js"></script>
+
+        <!-- Angular -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+        <!--<script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>-->
+        <script src="app.js"></script>
+        <script src="directives/header/header.js"></script>
+        <script src="directives/menu/menu.js"></script>
+        <script src="directives/footer/footer.js"></script>
+        <script src="directives/right/right.js"></script>
+        <script src="directives/left/left.js"></script>
+
+
+        <script src="components/home/home.js"></script>
+        <script src="components/about/about.js"></script>
+        <script src="components/info/info.js"></script>
+        <script src="components/aboutMidrasha/aboutMidrasha.js"></script>
+        <script src="components/way/way.js"></script>
+
     </body>
+
 </html>
