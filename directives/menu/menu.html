@@ -1,15 +1,15 @@
   <div class="menu">
-                <div class="tab tab1 current" ng-click ="state.transitionTo('home')">
+                <div ng-class="{'current': state.includes('home') }" class="tab tab1" ng-click ="state.transitionTo('home')">
                 </div>
-                <div class="tab tab2" ng-click ="state.transitionTo('aboutMidrasha')">
+                <div ng-class="{'current': state.includes('aboutMidrasha') }" class="tab tab2" ng-click ="state.transitionTo('aboutMidrasha')">
                 </div>
-                <div class="tab tab3" ng-click ="state.transitionTo('info')">
+                <div ng-class="{'current': state.includes('info') }" class="tab tab3" ng-click ="state.transitionTo('info')">
                     </div>
-                <div class="tab tab4" ng-click ="state.transitionTo('library')">
+                <div ng-class="{'current': state.includes('library') }" class="tab tab4" ng-click ="state.transitionTo('library')">
                 </div>
-                <div class="tab tab5" ng-click ="state.transitionTo('contact')">
+                <div ng-class="{'current': state.includes('contact') }" class="tab tab5" ng-click ="state.transitionTo('contact')">
                 </div>
-                <div class="tab tab6" ng-click ="state.transitionTo('aboutMidrasha')">
+                <div ng-class="{'current': state.includes('aboutMidrasha') }" class="tab tab6" ng-click ="state.transitionTo('aboutMidrasha')">
                 </div>
 
             </div>

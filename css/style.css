@@ -204,13 +204,21 @@ background-color:#fff
   /* left: 0; */
   right: 245px;
   margin: auto;
+  background-color: #F4EDDA;
 }
+
 .inner-page .middle{
   width: 647px;
   height: 470px;
   background-color: #F4EDDA;
   right: 42px;
    border-radius: 16px;
+}
+.narrow  .middle{
+    right: 207px;
+    width: 483px;
+
+    
 }
 .inner-page .with-sidebar{
     width: 477px;

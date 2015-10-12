@@ -3,7 +3,7 @@ shiratSite.directive('right', ['$state', '$rootScope', function ($state, $rootSc
         restrict: 'E',
         templateUrl: './directives/right/right.html',
         link: function (scope, el, attrs) {
-         
+            scope.state = $state;
 
         },
         replace: true

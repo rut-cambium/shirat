@@ -6,10 +6,9 @@
 
 
         <ul>
-            <li class="active">שנת המדרשה</li>
-            <li>גלריה</li>
-            <a href="way.html">
-            <li>פרטים ודרכי הגעה</li></a>
+            <li ng-class="{'active': state.includes('aboutMidrasha') }" ng-click ="state.transitionTo('aboutMidrasha')">שנת המדרשה</li>
+            <li ng-class="{'active': state.includes('gallery') }">גלריה</li>
+            <li ng-class="{'active': state.includes('way') }" ng-click ="state.transitionTo('way')">פרטים ודרכי הגעה</li>
             <li>קצרצרים</li>
         </ul>
     </div>
