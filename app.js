@@ -64,4 +64,27 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
 shiratSite.run(function ($rootScope,$state) {
    state = $state
 });
+var domain = 'http://www.shirat.org.il/'
+function sendAjax(){
 
+ $.ajax({
+            type: 'GET',
+            data:{
+                ravname:'etrogh',
+                posttype:'audio',
+                lessontype:'emuna'
+            },
+            url: domain + "?json=shiart.getravs&dev=1",
+            dataType: 'json',
+            success: function (data) {
+                if (callback)
+					console.log(data)
+                    callback(data);
+            },
+            error: function (e) {
+                ////////console.log(e.message);
+                callback(new ErrorHandler(0)); //sends an error handler
+            }
+        });	
+		//http://www.shirat.org.il/?json=shirat.getravs()&ravname=etrog&posttype=audio&lessontype=emuna&dev=1
+}
