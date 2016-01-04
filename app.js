@@ -53,6 +53,16 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
             }
 
         })
+         .state("share", {
+            url: "/share",
+            views: {
+                "main": {
+                    templateUrl: "components/share/share.html",
+                    controller: "share"
+                }
+            }
+
+        })
 
         
         

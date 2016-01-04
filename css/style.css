@@ -204,7 +204,7 @@ background-color:#fff
   /* left: 0; */
   right: 245px;
   margin: auto;
-  background-color: #F4EDDA;
+
 }
 
 .inner-page .middle{
@@ -445,6 +445,15 @@ background-image: url('../img/inner-header.jpg')
   margin-top: 11px;
   margin-left: 15px;
 		}
+.way .subject-img
+{
+        position: absolute;
+    top: -31px;
+    background-image: url('../img/way.jpg');
+    width: 224px;
+    height: 61px;
+    left: 0;
+}
 		.information .subject-img{
 		  background-image: url('../img/about.png');
  
@@ -469,7 +478,14 @@ background-image: url('../img/inner-header.jpg')
   height: 290px;
   overflow-y: auto;
   }
- 
+.middle .text
+ {
+   height:  394px
+}
+.information .text
+{
+        height: 290px;
+}
  .inner-page .middle .title span {
  
   margin-top: 8px;}
