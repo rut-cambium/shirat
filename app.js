@@ -63,6 +63,16 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
             }
 
         })
+        .state("gallery", {
+            url: "/gallery",
+            views: {
+                "main": {
+                    templateUrl: "components/gallery/gallery.html",
+                    controller: "gallery"
+                }
+            }
+
+        })
 
         
         

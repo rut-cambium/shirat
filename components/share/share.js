@@ -1,3 +1,3 @@
-shiratSite.controller('share', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
+shiratSite.controller('gallery', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
    
 } ]);
