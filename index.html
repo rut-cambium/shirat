@@ -5,16 +5,17 @@
         <title>מדרשת שירת חברון</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/modernizr.custom.70736.js"></script>
     </head>
 
     <body>
-        <div class="main-container" ng-class="{'narrow':state.includes('way') ,'inner-page': state.includes('about') || state.includes('aboutMidrasha') || state.includes('info') || state.includes('way') }">
+        <div class="main-container" ng-class="{'narrow':state.includes('way') ,'inner-page': state.includes('about') || state.includes('aboutMidrasha') || state.includes('info') || state.includes('way') || state.includes('share') }">
             <header></header>
             <menu></menu>
 
             <div class=" main-wrap">
                 <div class="main">
-                    <right ng-hide="state.includes('about') || state.includes('aboutMidrasha') || state.includes('info')"></right>
+                    <right ng-hide="state.includes('about') || state.includes('aboutMidrasha') || state.includes('info')|| state.includes('share')"></right>
                     <div id="main-view" data-ui-view="main" class="main-view">
                     
                     </div>
@@ -53,6 +54,8 @@
         <script src="components/info/info.js"></script>
         <script src="components/aboutMidrasha/aboutMidrasha.js"></script>
         <script src="components/way/way.js"></script>
+         <script src="components/share/share.js"></script>
+        <script src="components/gallery/gallery.js"></script>
 
     </body>
 

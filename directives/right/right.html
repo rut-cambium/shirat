@@ -7,9 +7,10 @@
 
         <ul>
             <li ng-class="{'active': state.includes('aboutMidrasha') }" ng-click ="state.transitionTo('aboutMidrasha')">שנת המדרשה</li>
-            <li ng-class="{'active': state.includes('gallery') }">גלריה</li>
+            <li ng-class="{'active': state.includes('gallery') }" ng-click ="state.transitionTo('gallery')">גלריה</li>
+            <li ng-class="{'active': state.includes('share') }"  ng-click ="state.transitionTo('share')">כותבות ומשתפות</li>
             <li ng-class="{'active': state.includes('way') }" ng-click ="state.transitionTo('way')">פרטים ודרכי הגעה</li>
-            <li>קצרצרים</li>
+            
         </ul>
     </div>
     <div class="social-icons">
