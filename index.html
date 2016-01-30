@@ -9,13 +9,13 @@
     </head>
 
     <body>
-        <div class="main-container" ng-class="{'narrow':state.includes('way') ,'inner-page': state.includes('about') || state.includes('aboutMidrasha') || state.includes('info') || state.includes('way') || state.includes('share') }">
+        <div class="main-container" ng-class="{'narrow':state.includes('way') || state.includes('gallery') || state.includes('aboutMidrasha') ||state.includes('share') ,'inner-page': state.includes('about') || state.includes('gallery') || state.includes('aboutMidrasha') || state.includes('info') || state.includes('library') || state.includes('way') || state.includes('share') }">
             <header></header>
             <menu></menu>
 
             <div class=" main-wrap">
                 <div class="main">
-                    <right ng-hide="state.includes('about') || state.includes('aboutMidrasha') || state.includes('info')|| state.includes('share')"></right>
+                    <right ng-hide="state.includes('about') ||  state.includes('info')  ||  state.includes('library')"></right>
                     <div id="main-view" data-ui-view="main" class="main-view">
                     
                     </div>
@@ -55,6 +55,7 @@
         <script src="components/way/way.js"></script>
          <script src="components/share/share.js"></script>
         <script src="components/gallery/gallery.js"></script>
+		<script src="components/library/library.js"></script>
 
     </body>
 

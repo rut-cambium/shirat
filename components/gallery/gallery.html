@@ -1,0 +1,21 @@
+<div class="middle gallery">
+    <div class="title"><span>גלריה</span></div>
+    <div class="text">
+        <div class="gallery-wrap">
+            <div class="gallery-main-img" style="background-image: {{'url(img/'+galleryList[activeIndex]+')'}}">
+            </div>
+
+            <div class="gallery-list">
+                <span ng-click="scrollRight()" class="right-triangle"></span>
+                <div class="gallery-list-inner">
+                    <span ng-repeat="img in galleryList" ng-click="switchImg($index)" style="background-image: {{'url(img/'+galleryList[$index]+')'}}" class="list-item"></span>
+                </div>
+
+                <span ng-click="scrollLeft()" class="left-triangle"></span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="subject-img"></div>
+</div>
