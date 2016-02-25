@@ -83,6 +83,16 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
             }
 
         })
+		 .state("lesson", {
+            url: "/lesson/:lesID",
+            views: {
+                "main": {
+                    templateUrl: "components/lesson/lesson.html",
+                    controller: "lesson"
+                }
+            }
+
+        })
 
         
         

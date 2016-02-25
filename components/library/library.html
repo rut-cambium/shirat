@@ -2,12 +2,16 @@
     <div class="main information">
 
         <div class="middle" ng-init="activeIndex = 0">
-            <div class="title" ng-click="activeIndex = 0" ng-class="{'active':activeIndex == 0}"><span>מיטל</span></div>
-            <div class="title" ng-click="activeIndex = 1" ng-class="{'active':activeIndex == 1}"><span>נעה</span></div>
-            <div class="title" ng-click="activeIndex = 2" ng-class="{'active':activeIndex == 2}"><span>ימים פתוחים</span></div>
+         
+            <div class="title"  ><span>ספריית שיעורים</span></div>
             <div class="text">
-           <div ng-repeat="lesson in lessonsArr">
-		   {{'title: '+ lesson.title}}
+			<div class="green-title">שיעורים אחרונים שהוכנסו למאגר</div>
+           <div ng-if="allLessonsExist"  ng-click="lessonClick(lesson)"  ng-repeat="lesson in lessonsArr | orderBy:lesson.date">
+		   <span class="lesson-rav">{{lesson.custom_fields["wpcf-ravname"][0]}}</span>
+		   <span class="lesson-type">{{lesson.type=='audio'? 'שמע':lesson.type=='video'? 'וידאו': lesson.type=='read' ?'מאמר' : '' }}</span>
+		   <span class="lesson-subj">{{lesson.custom_fields["wpcf-title"][0]}}</span>
+		   <span class="lesson-date"></span>
+		   
             </div>
             <div class="subject-img"></div>
         </div>
