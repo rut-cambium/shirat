@@ -1,0 +1,23 @@
+<div>
+    <div class="main">
+
+        <div class="middle" ng-init="activeIndex = 0">
+
+            <div class="title"><span>ספריית שיעורים</span></div>
+            <div class="text">
+                <div class="green-title">שיעורים אחרונים שהוכנסו למאגר</div>
+                <div ng-if="allLessonsExist" class="library-wrap">
+                    <div  class="lesson-line" ng-click="lessonClick(lesson)" ng-repeat="lesson in lessonsArr | orderBy:lesson.date">
+                        <span class="column lesson-rav">{{lesson.custom_fields["wpcf-ravname"][0]}}</span>
+                        <span class="column lesson-type">{{lesson.type=='audio'? 'שמע':lesson.type=='video'? 'וידאו': lesson.type=='read' ?'מאמר' : '' }}</span>
+                        <span class="column lesson-subj">{{lesson.custom_fields["wpcf-title"][0]}}</span>
+                        <span class="column lesson-date"></span>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>

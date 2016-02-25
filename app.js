@@ -1,4 +1,3 @@
-var domain = "http://www.shirat.org.il/";
 var shiratSite= angular.module('shiratSite', ['ui.router'])
 
 /**** UI Router ****/
@@ -74,6 +73,26 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
             }
 
         })
+		 .state("library", {
+            url: "/library",
+            views: {
+                "main": {
+                    templateUrl: "components/library/library.html",
+                    controller: "library"
+                }
+            }
+
+        })
+		 .state("lesson", {
+            url: "/lesson/:lesId/:lesType",
+            views: {
+                "main": {
+                    templateUrl: "components/lesson/lesson.html",
+                    controller: "lesson"
+                }
+            }
+
+        })
 
         
         
@@ -82,7 +101,31 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
 
 
 
-shiratSite.run(function ($rootScope,$state) {
-   state = $state
+shiratSite.run(function ($rootScope, $state) {
+    state = $state;
+    $rootScope.domain = "http://www.shirat.org.il/?json=";
 });
+var domain = 'http://www.shirat.org.il/'
+function sendAjax(){
 
+ $.ajax({
+            type: 'GET',
+            data:{
+                ravname:'etrogh',
+                posttype:'audio',
+                lessontype:'emuna'
+            },
+            url: domain + "?json=shiart.getravs&dev=1",
+            dataType: 'json',
+            success: function (data) {
+                if (callback)
+					console.log(data)
+                    callback(data);
+            },
+            error: function (e) {
+                ////////console.log(e.message);
+                callback(new ErrorHandler(0)); //sends an error handler
+            }
+        });	
+		//http://www.shirat.org.il/?json=shirat.getravs()&ravname=etrog&posttype=audio&lessontype=emuna&dev=1
+}

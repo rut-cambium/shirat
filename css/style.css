@@ -556,3 +556,99 @@ a {
 .inner-page .middle .title span {
     margin-top: 8px;
 }
+
+
+/*******gallery*******/
+.gallery-wrap{
+        height: 100%;
+}
+.gallery .text
+{
+        padding: 0;
+        
+}
+.gallery-main-img{
+ width: 88%;
+    height: 80%;
+    background-size: cover;
+    display: block;
+    margin: auto;
+}
+
+.gallery-list{
+    height: 70px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.gallery-wrap .list-item{
+        background-size: cover;
+    display: inline-block;
+    width: 93px;
+    height: 100%;
+    margin: 0 3px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.gallery-list-inner
+{
+        display: inline-block;
+    width: 427px;
+    height: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.right-triangle{
+      width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 19px 0 19px 14px;
+    border-color: transparent transparent transparent #02a998;
+    display: inline-block;
+    vertical-align: middle;
+      margin-left: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.left-triangle
+{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 19px 14px 19px 0;
+border-color: transparent #02a998 transparent transparent;
+display: inline-block;
+        vertical-align: middle;
+    margin-right: 6px;
+    cursor: pointer;
+}
+/***library****/
+.green-title{
+        color: #83AC97;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+.library-wrap{
+      background-color: #faf9f4;
+    border-radius: 20px;
+    height: 90%;
+    overflow-y: auto;
+}
+.lesson-line
+{
+       border-bottom: 1px solid #E3E0DB;
+    padding: 10px 0;
+    padding-right: 20px;
+}
+.column{
+        width: 28%;
+    display: inline-block;
+    vertical-align: top;
+}
+.lesson-type{
+    width: 20%
+}
