@@ -1,3 +1,15 @@
 <div>
-  
+<div class="lesson-details-wrap">
+</div>
+
+  <div class="lesson-switch-container"
+    ng-switch on="lesType">
+      <div class="animate-switch" ng-switch-when="video">
+		<iframe  ng-src="{{videourl}}" frameborder="0" allowfullscreen ></iframe>
+	  
+	  </div>
+      <div class="animate-switch" ng-switch-when="audio">audio Span</div>
+	  <div class="animate-switch" ng-switch-when="read">READ Span</div>
+      
+  </div>
 </div>

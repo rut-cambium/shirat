@@ -26,7 +26,11 @@
                 </div>
 
             </div>
-
+			<div class="video-popup" ng-if="showMainVideo == true" ng-click="closeMainVideo()" ng-init="showMainVideo =false">
+					<div id="video-embed-wrap">
+					<iframe src="https://www.youtube.com/embed/SKwDzptIj2I?autoplay=1" frameborder="0" allowfullscreen ></iframe>
+					</div>
+			</div>
             <footer></footer>
 
 
@@ -39,6 +43,7 @@
         <!-- Angular -->
         <script src="js/angular.min.js"></script>
         <script src="js/angular-ui-router.min.js"></script>
+		 <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-sanitize.js"></script>
         <!--<script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>-->
         <script src="app.js"></script>
         <script src="directives/header/header.js"></script>

@@ -104,6 +104,7 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
 shiratSite.run(function ($rootScope, $state) {
     state = $state;
     $rootScope.domain = "http://www.shirat.org.il/?json=";
+	$rootScope.showMainVideo = false;
 });
 var domain = 'http://www.shirat.org.il/'
 function sendAjax(){
