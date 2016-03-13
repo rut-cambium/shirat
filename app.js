@@ -1,4 +1,4 @@
-var shiratSite= angular.module('shiratSite', ['ui.router'])
+var shiratSite= angular.module('shiratSite', ['ui.router','ngSanitize'])
 
 /**** UI Router ****/
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -130,3 +130,9 @@ function sendAjax(){
         });	
 		//http://www.shirat.org.il/?json=shirat.getravs()&ravname=etrog&posttype=audio&lessontype=emuna&dev=1
 }
+
+shiratSite.filter('trustedurl', ['$sce', function ($sce) {
+    return function (url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+} ]);

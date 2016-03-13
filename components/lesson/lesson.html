@@ -1,15 +1,21 @@
-<div>
-<div class="lesson-details-wrap">
-</div>
+<div class="middle information">
+    <div class="lesson-details-wrap">
+    </div>
 
-  <div class="lesson-switch-container"
-    ng-switch on="lesType">
-      <div class="animate-switch" ng-switch-when="video">
-		<iframe  ng-src="{{videourl}}" frameborder="0" allowfullscreen ></iframe>
-	  
-	  </div>
-      <div class="animate-switch" ng-switch-when="audio">audio Span</div>
-	  <div class="animate-switch" ng-switch-when="read">READ Span</div>
-      
-  </div>
+    <div class="lesson-switch-container" ng-switch on="lesType">
+        <div class="type-switch" ng-switch-when="video">
+            <iframe ng-show="videourl" src="{{videourl|trustedurl}}" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <div ng-if="audiourl" class="type-switch" ng-switch-when="audio">
+            <audio controls autoplay>
+                <source src="{{audiourl|trustedurl}}" type="audio/mp3"/>
+            </audio>
+        </div>
+         <div  class="type-switch" ng-switch-when="read">
+           <div ng-bind-html="articleLessonContent" class="article-text"></div>
+        </div>
+
+
+    </div>
 </div>
