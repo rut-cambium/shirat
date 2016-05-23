@@ -671,6 +671,8 @@ display: inline-block;
     height: 90%;
     overflow-y: auto;
 }
+.type-switch{height: 100%}
+.lesson-switch-container{height: 100%}
 .lesson-line
 {
        border-bottom: 1px solid #E3E0DB;
@@ -684,6 +686,24 @@ display: inline-block;
 }
 .lesson-type{
     width: 20%
+}
+
+.type-switch audio{
+        width: 400px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+}
+
+.article-text{
+        padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 30px;
 }
 
 
