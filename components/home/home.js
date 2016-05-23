@@ -1,5 +1,5 @@
 shiratSite.controller('home', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
-    $rootScope.showMainVideo = function(){
+    $rootScope.showMainVideoFunc = function(){
 		$rootScope.showMainVideo =true
 	}
 	 $rootScope.closeMainVideo = function(){

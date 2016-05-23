@@ -9,13 +9,13 @@
     </head>
 
     <body>
-        <div class="main-container" ng-class="{'narrow':state.includes('way') || state.includes('gallery') || state.includes('aboutMidrasha') ||state.includes('share') ,'inner-page': state.includes('about') || state.includes('gallery') || state.includes('aboutMidrasha') || state.includes('info') || state.includes('library') || state.includes('way') || state.includes('share') }">
+        <div class="main-container" ng-class="{'narrow':state.includes('way') ||  state.includes('gallery') || state.includes('aboutMidrasha') ||state.includes('share') ,'inner-page': state.includes('about') || state.includes('donation') || state.includes('gallery') || state.includes('aboutMidrasha') || state.includes('info') || state.includes('library') || state.includes('way') || state.includes('share') }">
             <header></header>
             <menu></menu>
 
             <div class=" main-wrap">
                 <div class="main">
-                    <right ng-hide="state.includes('about') ||  state.includes('info')  ||  state.includes('library')"></right>
+                    <right ng-hide="state.includes('about') ||  state.includes('info')  || state.includes('donation') || state.includes('library') "></right>
                     <div id="main-view" data-ui-view="main" class="main-view">
                     
                     </div>
@@ -26,7 +26,7 @@
                 </div>
 
             </div>
-			<div class="video-popup" ng-if="showMainVideo == true" ng-click="closeMainVideo()" ng-init="showMainVideo =false">
+			<div class="video-popup" ng-class="{'open': showMainVideo  == true}" ng-if="showMainVideo == true" ng-click="closeMainVideo()" ng-init="showMainVideo =false">
 					<div id="video-embed-wrap">
 					<iframe src="https://www.youtube.com/embed/SKwDzptIj2I?autoplay=1" frameborder="0" allowfullscreen ></iframe>
 					</div>
@@ -62,6 +62,7 @@
         <script src="components/gallery/gallery.js"></script>
 		<script src="components/library/library.js"></script>
 		<script src="components/lesson/lesson.js"></script>
+		<script src="components/donation/donation.js"></script>
 
     </body>
 

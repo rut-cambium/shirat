@@ -93,6 +93,16 @@ var shiratSite= angular.module('shiratSite', ['ui.router'])
             }
 
         })
+		.state("donation", {
+            url: "/donation",
+            views: {
+                "main": {
+                    templateUrl: "components/donation/donation.html",
+                    controller: "donation"
+                }
+            }
+
+        })
 
         
         
