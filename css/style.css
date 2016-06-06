@@ -714,8 +714,26 @@ display: inline-block;
        background-image: url('../img/13.png');
     width: 479px;
 }
-.donation-page .text{height: 476px;}
+.donation-page .text{height: 476px;
+                     
+    padding-top: 20px;
+}
 .circle-delimiter
 {
 color: #289987
 }
+.sub-title-gray{
+        margin-right: 159px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.can-text{}
+.donation-wrap{}
+.donation-item{
+    
+}
+.don-item-title{}
+.don-item-desc{}
+.donation-details{font-size: 15px;
+}}
