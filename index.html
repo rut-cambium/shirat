@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <title>מדרשת שירת חברון</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="title" content="מדרשת שירת חברון ">
+        <meta name="description" content="מדרשה, מדרשה לבנות, שנת מדרשה,לימוד תורה לבנות,ספריית שיעורים, תורה לשמה,לימוד תוררה לנשים ">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/modernizr.custom.70736.js"></script>
     </head>
@@ -17,7 +19,7 @@
                 <div class="main">
                     <right ng-hide="state.includes('about') ||  state.includes('info')  || state.includes('donation') || state.includes('library') "></right>
                     <div id="main-view" data-ui-view="main" class="main-view">
-                    
+
                     </div>
 
                     <left></left>
@@ -26,11 +28,11 @@
                 </div>
 
             </div>
-			<div class="video-popup" ng-class="{'open': showMainVideo  == true}" ng-if="showMainVideo == true" ng-click="closeMainVideo()" ng-init="showMainVideo =false">
-					<div id="video-embed-wrap">
-					<iframe src="https://www.youtube.com/embed/SKwDzptIj2I?autoplay=1" frameborder="0" allowfullscreen ></iframe>
-					</div>
-			</div>
+            <div class="video-popup" ng-class="{'open': showMainVideo  == true}" ng-if="showMainVideo == true" ng-click="closeMainVideo()" ng-init="showMainVideo =false">
+                <div id="video-embed-wrap">
+                    <iframe src="https://www.youtube.com/embed/SKwDzptIj2I?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
             <footer></footer>
 
 
@@ -43,7 +45,7 @@
         <!-- Angular -->
         <script src="js/angular.min.js"></script>
         <script src="js/angular-ui-router.min.js"></script>
-		 <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-sanitize.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script>
         <!--<script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>-->
         <script src="app.js"></script>
         <script src="directives/header/header.js"></script>
@@ -58,11 +60,11 @@
         <script src="components/info/info.js"></script>
         <script src="components/aboutMidrasha/aboutMidrasha.js"></script>
         <script src="components/way/way.js"></script>
-         <script src="components/share/share.js"></script>
+        <script src="components/share/share.js"></script>
         <script src="components/gallery/gallery.js"></script>
-		<script src="components/library/library.js"></script>
-		<script src="components/lesson/lesson.js"></script>
-		<script src="components/donation/donation.js"></script>
+        <script src="components/library/library.js"></script>
+        <script src="components/lesson/lesson.js"></script>
+        <script src="components/donation/donation.js"></script>
 
     </body>
 
