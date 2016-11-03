@@ -1,4 +1,4 @@
-var shiratSite= angular.module('shiratSite', ['ui.router','ngSanitize'])
+var shiratSite= angular.module('shiratSite', ['ui.router'])
 
 /**** UI Router ****/
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -113,10 +113,10 @@ var shiratSite= angular.module('shiratSite', ['ui.router','ngSanitize'])
 
 shiratSite.run(function ($rootScope, $state) {
     state = $state;
-    $rootScope.domain = "http://www.shirat.org.il/?json=";
+    $rootScope.domain = "http://shirat.org.il/?json=";
 	$rootScope.showMainVideo = false;
 });
-var domain = 'http://www.shirat.org.il/'
+var domain = 'http://shirat.org.il/'
 function sendAjax(){
 
  $.ajax({
@@ -140,9 +140,3 @@ function sendAjax(){
         });	
 		//http://www.shirat.org.il/?json=shirat.getravs()&ravname=etrog&posttype=audio&lessontype=emuna&dev=1
 }
-
-shiratSite.filter('trustedurl', ['$sce', function ($sce) {
-    return function (url) {
-        return $sce.trustAsResourceUrl(url);
-    };
-} ]);
