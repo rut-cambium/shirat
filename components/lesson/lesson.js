@@ -1,5 +1,11 @@
 shiratSite.controller('lesson', ['$rootScope', '$scope', '$stateParams', '$state', '$timeout', '$sce', function ($rootScope, $scope, $stateParams, $state, $timeout, $sce) {
 
+	$scope.trustSrc = function(src) {
+           return $sce.trustAsResourceUrl(src);
+        }
+       
+
+
     $scope.lessonId = $stateParams.lesId;
     $scope.lesType = $stateParams.lesType;
 

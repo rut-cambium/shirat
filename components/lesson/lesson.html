@@ -4,12 +4,12 @@
 
     <div class="lesson-switch-container" ng-switch on="lesType">
         <div class="type-switch" ng-switch-when="video">
-            <iframe ng-show="videourl" src="{{videourl|trustedurl}}" frameborder="0" allowfullscreen></iframe>
+            <iframe ng-show="videourl"   ng-src="{{trustSrc(videourl)}}" frameborder="0" allowfullscreen></iframe>
 
         </div>
         <div ng-if="audiourl" class="type-switch" ng-switch-when="audio">
             <audio controls autoplay>
-                <source src="{{audiourl|trustedurl}}" type="audio/mp3"/>
+                <source  ng-src="{{trustSrc(audiourl)}}"   type="audio/mp3"/>
             </audio>
         </div>
          <div  class="type-switch" ng-switch-when="read">

@@ -1,4 +1,4 @@
-var shiratSite= angular.module('shiratSite', ['ui.router'])
+var shiratSite= angular.module('shiratSite', ['ui.router','ngSanitize'])
 
 /**** UI Router ****/
 .config(function ($stateProvider, $urlRouterProvider) {
